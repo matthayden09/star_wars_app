@@ -42,7 +42,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/add', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/index.html/add'))
+    res.sendFile(path.join(__dirname + '/public/add.html'))
 })
 
 // API ROUTES

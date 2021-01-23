@@ -53,5 +53,33 @@
     </form>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+      const form = $('form')
+    const searchInput = $('#search')
+    const avatar = $('#avatar')
+    const name = $('#name')
+    const age = $('#age')
+    const role = $('#role')
+    const forcePoints = $('#forcePoints')
+
+    form.on('submit', e => {
+        e.preventDefault()
+
+        const data = {
+            name: name.val(),
+            age: age.val(),
+            role: role.val(),
+            forcePoints: forcePoints.val(),
+            avatar: avatar.val(),
+        }
+
+        $.ajax({
+            url: '/api/characters/add',
+            method: 'POST',
+            data,
+        })
+    })
+            
+  </script>
 </body>
 </html>
