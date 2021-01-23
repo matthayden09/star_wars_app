@@ -1,5 +1,5 @@
 {
-  "name": "05-starwars_app",
+  "name": "05-star_wars_app",
   "version": "1.0.0",
   "description": "A Star Wars App",
   "main": "server.js",

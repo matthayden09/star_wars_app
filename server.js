@@ -33,6 +33,11 @@ app.get('/', (req, res) => {
     res.send('May the Force be with you')
 })
 
+// /api/characters - show all character data
+app.get('/api/characters', (req, res) => {
+    res.json(characters)
+})
+
 app.listen(PORT, () => {
     console.log(`Server listening on http://localhost:${PORT}`)
 })
